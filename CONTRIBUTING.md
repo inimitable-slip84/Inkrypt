@@ -4,12 +4,10 @@ Thank you for helping make Inkrypt better. This project is **open source** and w
 
 ## Ways to contribute
 
-- Report bugs or suggest features ([Issues](https://github.com/YOUR_ORG/Inkrypt/issues))
+- Report bugs or suggest features ([Issues](https://github.com/yafet-dev/Inkrypt/issues))
 - Submit pull requests (bugfixes, features, tests)
 - Improve documentation (`README`, `docs/`, code comments where they add real value)
 - Review others’ PRs, reproduce bug reports, or answer questions
-
-Replace `YOUR_ORG/Inkrypt` with your repository path after publishing on GitHub.
 
 ## Before you code
 
@@ -20,7 +18,7 @@ Replace `YOUR_ORG/Inkrypt` with your repository path after publishing on GitHub.
 ## Development setup
 
 ```bash
-git clone https://github.com/YOUR_ORG/Inkrypt.git
+git clone https://github.com/yafet-dev/Inkrypt.git
 cd Inkrypt
 npm install
 ```

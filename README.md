@@ -21,9 +21,9 @@ This project is **open to everyone**: code, docs, issues, translations, design, 
 
 | | |
 |---|---|
-| **Source** | `https://github.com/YOUR_ORG/Inkrypt` — replace with your repo URL after publishing |
+| **Source** | [github.com/yafet-dev/Inkrypt](https://github.com/yafet-dev/Inkrypt) |
 | **Chrome Web Store** | Add your listing URL after publish |
-| **Issues** | `https://github.com/YOUR_ORG/Inkrypt/issues` |
+| **Issues** | [github.com/yafet-dev/Inkrypt/issues](https://github.com/yafet-dev/Inkrypt/issues) |
 
 ## Features
 
