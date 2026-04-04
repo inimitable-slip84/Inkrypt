@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Vite
+.vite/
+
+# Environment (keep .env.example tracked)
+.env
+.env.*
+!.env.example
+
+# Logs & debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE / editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Test & coverage
+coverage/
+*.lcov
+
+# Optional: packaged extension (from npm run package:chrome)
+inkrypt-chrome.zip
+*.crx
+*.pem
+
+# Supabase local (if used)
+.supabase/
+supabase/.temp/
+
+# TypeScript
+*.tsbuildinfo

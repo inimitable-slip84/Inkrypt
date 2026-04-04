@@ -1,0 +1,53 @@
+{
+  "name": "vault-extension",
+  "private": true,
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "Inkrypt — open-source browser extension: encrypted password manager, TOTP/2FA authenticator, site autofill, optional self-hosted Supabase backend.",
+  "keywords": [
+    "password-manager",
+    "totp",
+    "2fa",
+    "authenticator",
+    "browser-extension",
+    "chrome-extension",
+    "manifest-v3",
+    "open-source",
+    "encryption",
+    "supabase",
+    "autofill",
+    "inkrypt"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "package:chrome": "npm run build && powershell -NoProfile -Command \"Compress-Archive -Path 'dist\\*' -DestinationPath 'inkrypt-chrome.zip' -Force\"",
+    "preview": "vite preview",
+    "db:login": "supabase login",
+    "db:link": "supabase link",
+    "db:push": "supabase db push",
+    "db:status": "supabase migration list"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "otpauth": "^9.3.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-qr-code": "^2.0.18",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.28",
+    "@types/chrome": "^0.0.287",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "supabase": "^2.84.7",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}

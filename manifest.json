@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Inkrypt",
+  "version": "1.0.0",
+  "description": "Inkrypt: open-source password manager & TOTP/2FA browser extension. Encrypted vault, autofill, Supabase backend (self-host).",
+  "icons": {
+    "16": "brand/logo.png",
+    "32": "brand/logo.png",
+    "48": "brand/logo.png",
+    "128": "brand/logo.png"
+  },
+  "action": {
+    "default_title": "Inkrypt — password manager & 2FA authenticator",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "brand/logo.png",
+      "32": "brand/logo.png",
+      "48": "brand/logo.png",
+      "128": "brand/logo.png"
+    }
+  },
+  "background": {
+    "service_worker": "src/background/index.ts",
+    "type": "module"
+  },
+  "permissions": ["storage", "alarms", "clipboardWrite", "activeTab"],
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "web_accessible_resources": [
+    {
+      "resources": ["brand/logo.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["src/content/autofill.ts"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}
