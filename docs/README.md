@@ -4,6 +4,7 @@ Welcome to the docs for **Inkrypt**, an open-source password manager and 2FA bro
 
 | Document | Description |
 |----------|-------------|
+| [Chrome Web Store — privacy text](chrome-web-store-privacy.md) | Copy-paste justifications for permissions and single purpose (Privacy practices tab) |
 | [Screenshots & store assets](screenshots.md) | How to capture images for the Chrome Web Store, GitHub readme, and social previews |
 | [Screenshots folder](screenshots/) | Drop finalized PNG/JPEG assets here (optional; see guide) |
 
@@ -16,6 +17,7 @@ Welcome to the docs for **Inkrypt**, an open-source password manager and 2FA bro
 | [CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md) | Community standards |
 | [SECURITY.md](../SECURITY.md) | How to report security issues |
 | [LICENSE](../LICENSE) | MIT License |
+| [PRIVACY.md](../PRIVACY.md) | Privacy policy (open source, no data selling) |
 
 ## Open source
 

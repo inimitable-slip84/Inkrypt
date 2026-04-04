@@ -15,6 +15,7 @@ This project is **open to everyone**: code, docs, issues, translations, design, 
 | **Screenshots & store assets** | [docs/screenshots.md](docs/screenshots.md) — Chrome Web Store sizes, GitHub embeds, safe capture tips |
 | **Contributing** | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | **Security** | [SECURITY.md](SECURITY.md) |
+| **Privacy** | [PRIVACY.md](PRIVACY.md) |
 | **License** | [LICENSE](LICENSE) (MIT) |
 
 ## Links
